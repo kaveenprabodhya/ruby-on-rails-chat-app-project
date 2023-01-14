@@ -1,0 +1,35 @@
+<h2 class="ui center aligned medium icon header">
+  <i class="teal circular wechat icon"></i>
+  Say Something
+</h2>
+<div class="ui two column grid">
+  <div class="twelve wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content" id="messages">
+        <div class="ui feed" id="message_container">
+          <%= render @messages %>
+        </div>
+      </div>
+      <div class="extra content">
+        <%= render 'messages/message_form' %>
+      </div>
+    </div>
+  </div>
+  <div class="four wide column">
+    <div class="ui fluid raised card chatbox">
+      <div class="content">
+        <div class="ui vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

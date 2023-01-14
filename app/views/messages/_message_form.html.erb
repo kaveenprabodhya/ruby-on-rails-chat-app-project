@@ -1,0 +1,7 @@
+<%= form_with url: message_path, id: "message_form" , scope: :session, remote: true, class: "ui reply form" do |f| %>
+  <div class="field">
+    <div class="ui fluid icon input">
+      <%= f.text_field :body, placeholder: "Enter message" %>
+    </div>
+  </div>
+<% end %>

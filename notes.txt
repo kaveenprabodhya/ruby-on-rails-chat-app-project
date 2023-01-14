@@ -1,0 +1,8 @@
+to precompile javascript file
+=> rails assets:precompile
+
+to run server
+=> rails server
+
+to get routes
+=> rails routes -c <route-name>

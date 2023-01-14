@@ -1,0 +1,9 @@
+<div class="col">
+  <% flash.each do |name, msg| %>
+    <%= puts name %>
+    <div class='ui <%="#{name}"%> message'>
+      <i class="close icon"></i>
+      <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+    </div>
+  <% end %>
+</div>
